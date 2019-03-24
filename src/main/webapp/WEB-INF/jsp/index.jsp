@@ -48,7 +48,7 @@
 								<td>${book.id}</td>
 								<td>${book.bookName}</td>
 								<td>${book.author}</td>
-								<td><fmt:formatDate pattern="yyyy-MM-dd" value="${book.purchaseDate}" /></td>
+								<td>${book.purchaseDate}</td>
 								<td><a href="updateBook?id=${book.id}"><div class="glyphicon glyphicon-pencil"></div></a></td>
 							</tr>
 						</c:forEach>

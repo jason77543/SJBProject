@@ -1,6 +1,6 @@
 package com.SJBProject.model;
 
-import java.time.LocalDateTime;
+import java.time.LocalDate;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -9,6 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 
 import org.springframework.format.annotation.DateTimeFormat;
+
 
 
 @Entity(name="books")
@@ -24,8 +25,8 @@ public class Books {
 	private String author;
 	
 	@Column(name="purchase_date")
-	@DateTimeFormat(pattern = "yyyy-MM-dd")
-	private LocalDateTime purchaseDate;
+	@DateTimeFormat(pattern="yyyy-MM-dd")
+	private LocalDate purchaseDate;
 
 	public long getId() {
 		return id;
@@ -51,11 +52,11 @@ public class Books {
 		this.author = author;
 	}
 
-	public LocalDateTime getPurchaseDate() {
+	public LocalDate getPurchaseDate() {
 		return purchaseDate;
 	}
 
-	public void setPurchaseDate(LocalDateTime purchaseDate) {
+	public void setPurchaseDate(LocalDate purchaseDate) {
 		this.purchaseDate = purchaseDate;
 	}
 

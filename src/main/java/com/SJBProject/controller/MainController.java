@@ -50,11 +50,9 @@ public class MainController {
 		return "index";
 	}
 	
-	
 	@PostMapping("/save")
 	public void saveBook(@ModelAttribute Books books,BindingResult bindingResult
 			,HttpServletRequest request,HttpServletResponse response) throws  IOException{
-		
 		log.debug(books.getPurchaseDate());
 		sjbService.saveBooks(books);
 		request.setAttribute("books", sjbService.findAllBooks());
