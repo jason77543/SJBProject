@@ -12,7 +12,7 @@ import org.springframework.data.jpa.convert.threeten.Jsr310JpaConverters;
 public class SjbProjectApplication {
 
 	private static final Logger log = LogManager.getLogger(SjbProjectApplication.class);
-
+  
 	public static void main(String[] args) {
 		SpringApplication.run(SjbProjectApplication.class, args);
 	}
