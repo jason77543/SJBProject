@@ -1,0 +1,17 @@
+{
+    "name": "dev-config-properties", 
+    "profiles": [
+        "dev"
+    ], 
+    "label": null, 
+    "version": null, 
+    "state": null, 
+    "propertySources": [
+        {
+            "name": "https://github.com/jason77543/SJBProject/config-properties/jason-config-properties", 
+            "source": {
+                "jason.hello": "hello im dev"
+            }
+        }
+    ]
+}
