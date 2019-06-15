@@ -10,7 +10,7 @@
         {
             "name": "https://github.com/jason77543/SJBProject/config-properties/jason-config-properties", 
             "source": {
-                message: "hello  im dev"
+                "message": "hello  im dev"
             }
         }
     ]
